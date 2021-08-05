@@ -1,12 +1,12 @@
+import React from 'react';
 import './App.css';
-import JokeContainer from './JokeContainer';
-
-function App() {
-  return (
-    <div className="App">
-      <JokeContainer />
-    </div>
-  );
+import JokesContainer from './JokesContainer';
+class App extends React.Component {
+  render(){
+    return (
+        <JokesContainer />
+    );
+  }
 }
 
 export default App;

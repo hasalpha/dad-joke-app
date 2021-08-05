@@ -1,0 +1,69 @@
+.Sidebar{
+    display:flex;
+    flex-direction: column;
+    padding: 1em;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    width: 15em;
+    border-radius: 12px;
+    -moz-box-shadow:
+		0px 1px 1px rgba(000,000,000,0.5),
+		inset 1px 2px 0px rgba(255,255,255,0.4);
+	-webkit-box-shadow:
+		0px 1px 1px rgba(000,000,000,0.5),
+		inset 1px 2px 0px rgba(255,255,255,0.4);
+	box-shadow:
+		2px 5px 3px rgba(000,000,000,0.5),
+		inset 1px 2px 0px rgba(255,255,255,0.4);
+	text-shadow:
+		1px 1px 2px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.4);
+    z-index: 2;
+}
+
+#Title{
+    font-family: 'Butterfly Kids', cursive;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+#icon{
+    margin: 0;
+    font-size: 6em;
+}
+
+#icon:hover{
+    animation: rotate .7s linear;
+    animation-iteration-count: infinite;
+    cursor:pointer;
+}
+
+@keyframes rotate{
+    0%{
+        
+        transform:translateX(3px) rotate(0deg);
+    }
+    25%{
+        transform:translateX(-10px) rotate(90deg);
+    }50%{
+        transform:translateX(10px) rotate(180deg);
+    }75%{
+        transform:translateX(-10px) rotate(270deg);
+    }
+    100%{
+        transform: translateX(7px) rotate(360deg);
+    }
+}
+
+#Layer_1{
+   width:50%;
+   transition:all 0.5s ease;
+}
+
+#Layer_1:hover{
+    transform: scale(1.2);
+    cursor:pointer;
+}
